@@ -1,0 +1,24 @@
+<App>
+	<JavaScript>
+	var Player = require("FuseJS/StreamingPlayer");
+
+	Player.playlist = [{ "url": "BGM.mp3", "duration": 177.0}];
+
+	function play(){
+		console.log("Play!");
+		Player.play();
+	}
+
+	module.exports={
+		play:play
+	};
+	
+	</JavaScript>
+
+	<Text Value="PLAY MUSIC" Alignment="Center" FontSize="22">
+		<Clicked Handler="{play}" />
+		<WhilePressed>
+			<Scale Factor="0.8"/>
+		</WhilePressed>
+	</Text>
+</App>

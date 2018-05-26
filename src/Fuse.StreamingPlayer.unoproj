@@ -1,0 +1,17 @@
+{
+  "Packages": [
+    "Fuse",
+    "FuseJS",
+    "Uno.Permissions"
+  ],
+  "Includes": [
+    "iOS/ObserverProxy.h:ObjCHeader:iOS",
+    "iOS/ObserverProxy.mm:ObjCSource:iOS",
+
+    "Android/StreamingAudioService.java:Java:Android",
+    "Android/Track.java:Java:Android",
+    "Android/ArtworkMediaNotification.java:Java:Android",
+    "Android/MediaStyleHelper.java:Java:Android",
+    "*"
+  ]
+}
